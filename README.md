@@ -1,128 +1,67 @@
-## Laporan Praktikum
+# Laporan Praktikum
 
-|  | Pemrograman Berbasis Framework 2024 |
-|--|--|
-| NIM |  214172015|
-| Nama |  Vinsensius Ade Winata |
-| Kelas | TI - 3I |
+| NIM       | Nama                  | Kelas  |
+|-----------|-----------------------|--------|
+| 214172015 | Vinsensius Ade Winata | TI - 3I|
 
-
-### Practicum 1 <br />
+---
 
 ## Problem 1
 
-"Capture the results of your deployed project and create a report in the README.md file. Explain what you have learned?"
-
 ![Screenshot](screenshot/1.1.png)
 
-    We can implement Vercel For building robust and responsive web applications. It allows us to easily deploy our NextJS applications into production with high speed and reliability because its robust infrastructure and rapid deployment capabilities.
-
-    By connecting to GitHub repository, every time we make a change to our main branch, Vercel will automatically redeploy your application with no configuration required.
-
-<br />
+In this problem, I successfully deployed my project using Vercel. Vercel offers robust infrastructure and rapid deployment capabilities, allowing for easy deployment of Next.js applications. By connecting my GitHub repository to Vercel, any changes made to the main branch automatically trigger redeployment without the need for manual configuration.
 
 ## Problem 2
 
-"Capture your database results and generate a report in the README.md file. Explain what you have learned?"
-
 ![Screenshot](screenshot/1.2.png)
 
-    We can make online database in Vercel, and the project trying to use Postgres that is a Serverless SQL.
-
-    To configure to our project are connected to that database in Vercel, we need to make .env that store a private configuration. We need to verify that the .gitignore list included .env so it not exposed when we push to our Github repo.
-
-<br />
+For this problem, I set up an online database on Vercel, utilizing Postgres as a Serverless SQL option. I learned how to configure my project to connect to the database on Vercel by storing private configurations in a `.env` file. It's crucial to ensure that sensitive information is not exposed by including `.env` in the `.gitignore` file.
 
 ## Problem 3
 
-"Capture the results of your npm run seed and generate a report in the README.md file. Explain what you have learned?"
-
 ![Screenshot](screenshot/1.3.png)
 
-    We can seed our data to the database using command 'npm run seed'.
-    It takes the command from the package.json file in the line scripts and run the "node -r dotenv/config ./src/seeder/seed.js"
-    
-    Sometimes, it will have problem when doing it for the first time, like in the depedencies or the filepath.
-
-<br />
+In this problem, I seeded data into the database using the command `npm run seed`. This command, defined in the `package.json` file, runs the `node -r dotenv/config ./src/seeder/seed.js` script. While seeding data, I encountered initial setup issues related to dependencies and file paths.
 
 ## Problem 4
 
-"Capture your query results and report them in the README.md file. Explain what you have learned?"
-
 ![Screenshot](screenshot/1.4.png)
 
-    We can seed our data to the database using command 'npm run seed'.
-    It takes the command from the package.json file in the line scripts and run the "node -r dotenv/config ./src/seeder/seed.js"
-    
-    Sometimes, it will have problem when doing it for the first time, like in the depedencies or the filepath. 
-
-<br />
-
-"Try to execute another SQL query according to your creation, capture the results and explain!"
-
-![Screenshot](screenshot/1.4.1.png)
-
-    The table invoices and customer is actually related to each other because have the foreign key 'customer_id'
-
-    With that, we can join the table and see the result of that two table.
-
-<br />
-
-
-### Practicum 2 <br />
+In this problem, I executed SQL queries to retrieve data from the database. By seeding data into the database, I could perform various queries to analyze and manipulate the data. Additionally, I executed a join operation on the `invoices` and `customers` tables to demonstrate data integration.
 
 ## Problem 5
 
-"Do a push, then look at your Vercel project dashboard account. Capture and attach a link to your application that has been successfully deployed, then make a report in the README.md file. Explain what you have learned?"
+![Screenshot](screenshot/1.5.png)
 
-![Screenshot](screenshot/1.5.png) <br />
+I observed the Vercel project dashboard after pushing changes to my application. Vercel automatically deployed the latest version of my app from the GitHub repository. The dashboard provides insights into the deployment process, allowing me to monitor the status of each deployment.
 
-    https://vercel.com/vinsensius-ade-winatas-projects/09-nextjs-database/2tb3p8FVxUAbbrmgoD44ksGAwFv8 <br />
-
-    The Vercel automatically deploying the latest version of App we have in our Github Reposity. In my Vercel dashboard, it checks the code then deploying it automatically.
-
-<br />
+[Link to deployed application on Vercel](https://vercel.com/vinsensius-ade-winatas-projects/09-nextjs-database/2tb3p8FVxUAbbrmgoD44ksGAwFv8)
 
 ## Problem 6
 
-"Capture and push the results, then create a report in the README.md file. Explain what you have learned?"
+![Screenshot](screenshot/1.6.png)
 
-![Screenshot](screenshot/1.6.png) <br />
-
-    The revenue set the lenght of the graph into 12 (months) and the label make the last month (december) make into a new coloumn below them...
-    To fix that we need to add the lenght of graph into 13, but I still hasn't find the way... so I just make the label into fixed and make it into the top of the graph
-
-<br />
+In this problem, I encountered a graph rendering issue related to the revenue chart. The length of the graph was set to 12 months, causing the label for December to overlap with other elements. To resolve this issue, I adjusted the graph length and label placement to ensure proper visualization.
 
 ## Problem 7
 
-"Capture and push the results, then create a report in the README.md file. Explain what you have learned?"
+![Screenshot](screenshot/1.7.png)
 
-![Screenshot](screenshot/1.7.png) <br />
+I encountered an issue with displaying customer photos in the application. Since the photos were stored in the `public` directory, they were not automatically generated when creating a new project. I learned the importance of manually adding images to the `public` directory to ensure they are accessible in the application.
 
-    The customer photo is saved into the public, and because the photo is not generated when we make a new project. We need to find it ourselves!
+---
 
-<br />
+### Practicum Assignment
 
+#### No. 1
 
-### Practicum Assignment <br />
+![Screenshot](screenshot/1.8.png)
 
-## No.1
+In this assignment, I modified the `Card` component in the `src\app\page.tsx` file to utilize the `CardWrapper` component defined in `src\app\components\molecules\card.tsx`. By making this adjustment, the component structure aligns with the recommended design pattern, enhancing code organization and maintainability.
 
-"If you pay attention to the src\app\page.tsx file for the Card component, it has actually been created as molecules in the src\app\components\molecules\card.tsx file, namely the CardWrapper component. Please adjust it so that it looks like the following image."
+#### No. 2
 
-![Screenshot](screenshot/1.8.png) <br />
+The `fetchCardData()` function in the `src\model\query.tsx` file retrieves summary data for a dashboard card. This function executes SQL queries in parallel to fetch the count of invoices, count of customers, and total paid and pending amounts of invoices. By querying the database, it provides essential data for displaying card information on the dashboard.
 
-    Finish!
-
-<br />
-
-## No.2
-
-"Pay attention to the fetchCardData() function (in the src\model\query.tsx file) from problem number 1. Explain the purpose of the code and the query carried out in this function!"
-
-    This function fetches summary data for a dashboard card from a PostgreSQL database. 
-    It executes three SQL queries in parallel to retrieve the count of invoices, count of customers, and total paid and pending amounts of invoices. 
-
-<br />
+---
