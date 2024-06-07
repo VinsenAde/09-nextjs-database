@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Laporan Praktikum
 
-## Getting Started
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  214172015|
+| Nama |  Vinsensius Ade Winata |
+| Kelas | TI - 3I |
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Practicum 1 <br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problem 1
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+"Capture the results of your deployed project and create a report in the README.md file. Explain what you have learned?"
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot](screenshot/1.1.png)
 
-## Learn More
+    We can implement Vercel For building robust and responsive web applications. It allows us to easily deploy our NextJS applications into production with high speed and reliability because its robust infrastructure and rapid deployment capabilities.
 
-To learn more about Next.js, take a look at the following resources:
+    By connecting to GitHub repository, every time we make a change to our main branch, Vercel will automatically redeploy your application with no configuration required.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Problem 2
 
-## Deploy on Vercel
+"Capture your database results and generate a report in the README.md file. Explain what you have learned?"
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Screenshot](screenshot/1.2.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    We can make online database in Vercel, and the project trying to use Postgres that is a Serverless SQL.
+
+    To configure to our project are connected to that database in Vercel, we need to make .env that store a private configuration. We need to verify that the .gitignore list included .env so it not exposed when we push to our Github repo.
+
+<br />
+
+## Problem 3
+
+"Capture the results of your npm run seed and generate a report in the README.md file. Explain what you have learned?"
+
+![Screenshot](screenshot/1.3.png)
+
+    We can seed our data to the database using command 'npm run seed'.
+    It takes the command from the package.json file in the line scripts and run the "node -r dotenv/config ./src/seeder/seed.js"
+    
+    Sometimes, it will have problem when doing it for the first time, like in the depedencies or the filepath.
+
+<br />
+
+## Problem 4
+
+"Capture your query results and report them in the README.md file. Explain what you have learned?"
+
+![Screenshot](screenshot/1.4.png)
+
+    We can seed our data to the database using command 'npm run seed'.
+    It takes the command from the package.json file in the line scripts and run the "node -r dotenv/config ./src/seeder/seed.js"
+    
+    Sometimes, it will have problem when doing it for the first time, like in the depedencies or the filepath. 
+
+<br />
+
+"Try to execute another SQL query according to your creation, capture the results and explain!"
+
+![Screenshot](screenshot/1.4.1.png)
+
+    The table invoices and customer is actually related to each other because have the foreign key 'customer_id'
+
+    With that, we can join the table and see the result of that two table.
+
+<br />
+
+
+### Practicum 2 <br />
+
+## Problem 5
+
+"Do a push, then look at your Vercel project dashboard account. Capture and attach a link to your application that has been successfully deployed, then make a report in the README.md file. Explain what you have learned?"
+
+![Screenshot](screenshot/1.5.png) <br />
+
+    https://vercel.com/vinsensius-ade-winatas-projects/09-nextjs-database/2tb3p8FVxUAbbrmgoD44ksGAwFv8 <br />
+
+    The Vercel automatically deploying the latest version of App we have in our Github Reposity. In my Vercel dashboard, it checks the code then deploying it automatically.
+
+<br />
+
+## Problem 6
+
+"Capture and push the results, then create a report in the README.md file. Explain what you have learned?"
+
+![Screenshot](screenshot/1.6.png) <br />
+
+    The revenue set the lenght of the graph into 12 (months) and the label make the last month (december) make into a new coloumn below them...
+    To fix that we need to add the lenght of graph into 13, but I still hasn't find the way... so I just make the label into fixed and make it into the top of the graph
+
+<br />
+
+## Problem 7
+
+"Capture and push the results, then create a report in the README.md file. Explain what you have learned?"
+
+![Screenshot](screenshot/1.7.png) <br />
+
+    The customer photo is saved into the public, and because the photo is not generated when we make a new project. We need to find it ourselves!
+
+<br />
+
+
+### Practicum Assignment <br />
+
+## No.1
+
+"If you pay attention to the src\app\page.tsx file for the Card component, it has actually been created as molecules in the src\app\components\molecules\card.tsx file, namely the CardWrapper component. Please adjust it so that it looks like the following image."
+
+![Screenshot](screenshot/1.8.png) <br />
+
+    Finish!
+
+<br />
+
+## No.2
+
+"Pay attention to the fetchCardData() function (in the src\model\query.tsx file) from problem number 1. Explain the purpose of the code and the query carried out in this function!"
+
+    This function fetches summary data for a dashboard card from a PostgreSQL database. 
+    It executes three SQL queries in parallel to retrieve the count of invoices, count of customers, and total paid and pending amounts of invoices. 
+
+<br />
