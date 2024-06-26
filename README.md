@@ -73,4 +73,6 @@ I encountered an issue with displaying customer photos in the application. Since
 
 <br />
 
+![Screenshot](screenshot/week10.png) <br />
+
 after inputting username and password from vercel database, its not yet working
