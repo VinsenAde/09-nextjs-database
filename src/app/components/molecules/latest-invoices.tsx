@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { lusitana } from '@/app/components/atoms/fonts';
 import { fetchLatestInvoices } from '@/model/query';
 
-export async function LatestInvoices() {
+export default async function LatestInvoices() {
     const latestInvoices = await fetchLatestInvoices();
 
     return (

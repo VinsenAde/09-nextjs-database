@@ -1,4 +1,3 @@
-'use client';
 import { sql } from '@vercel/postgres';
 import {
     CustomerField,
@@ -9,7 +8,7 @@ import {
     User,
     Revenue,
 } from './definitions';
-import { formatCurrency } from '..//utils/utils';
+import { formatCurrency } from '../utils/utils';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function fetchRevenue() {

@@ -114,7 +114,6 @@
 
 ![Screenshot](screenshot/1.8.png) <br />
 
-    Finish!
 
 <br />
 
@@ -126,3 +125,6 @@
     It executes three SQL queries in parallel to retrieve the count of invoices, count of customers, and total paid and pending amounts of invoices. 
 
 <br />
+![Screenshot](screenshot/1.8.png) <br />
+
+after inputting username and password from vercel database, its not yet working
